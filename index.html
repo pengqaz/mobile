@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
+	 <link rel="shortcut icon" href="images/public/favicon.ico">
 	<title>网易严选</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.0.min.css"/>
+	<link rel="stylesheet" type="text/css" href="boot/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 <body>
-<header>红红火火</header>
+	<!-----------------------header头部公用-->
+	<header class="container-fluid">
+		<div class="J_nav" >
+		<img src="images/public/cai1.png"/>
+		<h3>网易严选</h3>
+		<img class="J_img2" src="images/public/shou1.png"/>
+		<img src="images/public/gou1.png"/>
+		</div>	
+	</header>
+	<!-------------------------section----->
+	<section>
+		<!----------轮播图部分---------->
+		<div class="swiper-container">
+		    <div class="swiper-wrapper text-center">
+		       
+		        <div class="swiper-slide"><img src="images/public/965df27d01ab78a3f17bb15d6b633baa.jpg"/></div>
+		        <div class="swiper-slide"><img src="images/public/da3be0fd6e3a3f901bf15f7c1c91fad6.jpg"/></div>
+		         <div class="swiper-slide"><img src="images/public/965df27d01ab78a3f17bb15d6b633baa.jpg"/></div>
+		    </div>
+		   
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+<!--			    
+			     如果需要滚动条 
+			    <div class="swiper-scrollbar"></div>-->
+		</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>	
+	<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper-3.4.0.jquery.min.js" type="text/javascript" 		charset="utf-8"></script>
+	
+		<script>  
+		
+  			var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'horizontal',
+			    loop: true,
+			    
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination',
+			    
+			    // 如果需要前进后退按钮
+			    nextButton: '.swiper-button-next',
+			    prevButton: '.swiper-button-prev',
+			    
+//			    // 如果需要滚动条
+//			    scrollbar: '.swiper-scrollbar',
+			  })        
+			  </script>
+		
+		<div>FSDFSDF</div>
+	</section>
+	
 </body>
+	
 </html>
