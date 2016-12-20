@@ -4,8 +4,97 @@
 		<meta charset="UTF-8">
 		<title>网易用户中心</title>
 		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script type="text/javascript">
+			var iwidth = document.documentElement.clientWidth;
+			document.getElementsByTagName("html")[0].style.fontSize=iwidth/16+"px";
+		</script>
 	</head>
 	<body>
-		
+		<header>
+			<div class="w_logo"></div>
+		</header>
+		<section class="w_form">
+			<p class="w_zhuce">注册账号</p>
+			<div class="u-input firstelem">
+	            <div class="u-label">帐号：</div>
+	            <input type="text" name="email" id="" placeholder="网易邮箱/手机号/其他邮箱" class="i-inpt">
+	        </div>
+	        <div class="u-input firstelem">
+	            <div class="u-label">密码：</div>
+	            <input type="text" name="mima" id="" placeholder="6-16位密码，区分大小写" class="i-inpt">
+	        </div>
+	        <div class="u-input firstelem">
+	            <div class="u-label">确认密码：</div>
+	            <input type="text" name="mimaa" id="" placeholder="6-16位密码，区分大小写" class="i-inpt">
+	        </div>
+	        <div class="u-input firstelem">
+	            <div class="u-label">验证码：</div>
+	            <div class="i-inpt yanzheng">
+	            	<div class="pintu" style="display: none;">
+	            			<img src="../images/public/1470922837206_779395020.jpg">
+	            			<img id="kapian" src="../images/public/1470922837206_249290449.png">
+	            			
+	            		</div>
+	            	<div class="huakuai" id="target">
+	            		
+	            		<img class="lu" src="https://captcha.reg.163.com/v2/images/slider.png">
+	            	</div>
+	            	
+	            	<div class="huakuai1">
+	            		按住滑块，拖动完成上方拼图
+	            	</div>
+	            <div>
+	
+	        </div>
+	            
+	        
+		</section>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			touch.on('#target', 'touchstart', function(ev){
+				ev.preventDefault();
+				$(".pintu").fadeIn();
+			});
+			
+			var target = document.getElementById("target");
+			var dx, dy;
+			var kapian = document.getElementById("kapian");
+			touch.on('#target', 'drag', function(ev){
+				dx = dx || 0;
+				dy = dy || 0;
+				if(ev.x>220){
+					ev.x=220;
+				}else if(ev.x<0){
+					ev.x=0;
+				}
+				var offx = dx + ev.x + "px"
+				console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
+				this.style.webkitTransform = "translate3d(" + offx + ",0 ,0)";
+				kapian.style.webkitTransform = "translate3d(" + offx + ",0 ,0)";
+			});
+			
+			touch.on('#target', 'dragend', function(ev){
+				if(ev.x>220){
+					ev.x=220;
+				}else if(ev.x<0){
+					ev.x=0;
+				}
+				dx += ev.x;
+				dy += ev.y;
+				console.log(dx);
+				if(dx>125 && dx<136){
+					$(".huakuai1").html("验证成功");
+					$(".yanzheng").css("background",'url("../images/public/sprite.png") no-repeat 230px -95px');
+					$(".lu").attr("src","https://captcha.reg.163.com/v2/images/slider_valid.png");
+					$('.pintu').fadeOut();
+					$(".huakuai").fadeOut();
+					
+				}
+				
+			});
+	    </script>
 	</body>
 </html>
