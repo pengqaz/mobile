@@ -59,21 +59,120 @@ $(function(){
 			
 			//商品图片加载
 			var goodpic = data.classify[0].goods.goodpic;
-//			console.log(goodpic);
 			var goodpicstr = "";
 			for(var i = 0;i< goodpic.length;i++){
 				goodpicstr = "<p><img src="+goodpic[i] +"></p>"
-//				console.log(goodpicstr);
 				$(".argnamelist").append(goodpicstr);
 			}
+			
+			//尺寸的内容
+			var sizea = $(".shosize a");
+			var sja = data.classify[0].goods.argument.size;
+			for(var i = 0;i < sja.length;i++){
+				sizea.eq(i).html(sja[i]);
+			}
+
+			//默认的选择规格
+			var inputval = 1;
+			var aval = "";	
+			var index = 0;
+			//选择加入到购物车页的信息   尺寸  点击a
+			$(".shosize a").each(function(){
+				$(this).click(function(){
+					index = $(this).index();
+//					alert(index);
+					$(".shosize a").removeClass("on"),
+					$(this).addClass("on");
+					aval = $(this).html();
+					var str = aval+"*" +inputval;
+					$(".guige .guisum").html(str);
+					
+					//点击a时，改变价格
+					var pricebox = $(".shopsec .goodpr");
+					var pricesj = data.classify[0].goods.argument.sizeprice;
+//						console.log(pricesj[index]);
+						pricebox.html(pricesj[index]);
+					
+					
+				});
+			});
+			
+			//选择加入到购物车页的信息   数量
+			//点击+加入购物车
+			var goodnum = 1;
+			$(".contshop .add").click(function(){
+				goodnum++;					
+				$(".contshop input").val(goodnum);
+				$(".contshop .jian").css({
+					"color":"#999",
+					"borderColor":"#999"
+				});
+				inputval = $(".contshop input").val();
+				var str = aval+"*" +inputval;
+				if(!aval){
+					$(".guige .guisum").html("请选择规格数量");
+				}else{
+					$(".guige .guisum").html(str);
+				}
+				
+			});
+			//点击-加入购物车
+			$(".contshop .jian").click(function(){
+				goodnum--;
+				if(goodnum <= 1){
+					goodnum = 1;
+					$(".contshop .jian").css({
+						"color":"#ccc",
+						"borderColor":"#ccc"
+					});
+					$(".goodmark").show();
+					setTimeout(function(){
+						$(".goodmark").hide();
+					},1000);
+				}
+				$(".contshop input").val(goodnum);
+				inputval = $(".contshop input").val();
+				var str = aval+"*" +inputval;
+				$(".guige .guisum").html(str);
+				
+			});
+		
+			
 			
 			
 		}
 		
+		
+		
+		
+		
+		
+		
+		
+		
 	});
 			
 			
-			
+	//点击按钮 进入到选择商品中
+	touch.on(".number","tap",function(){
+//		$(".toshop").show();
+		$(".toshopping").addClass("all_height");
+		$("body").addClass("over");
+
+		$(".changebg").addClass(".glyphicon glyphicon-arrow-left");
+		touch.on(".changebg","tap",function(){
+			$(".toshopping").removeClass("all_height");
+			$(".changebg").removeClass(".glyphicon glyphicon-arrow-left");	
+			$(".changebg").addClass(".glyphicon glyphicon-headphones");
+		})
+	});
+		
+		
+		
+		
+		
+	
+	
 			
 			
 			
