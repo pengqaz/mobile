@@ -36,7 +36,7 @@ $(function(){
 			var bId;
 			hId = $(this).parent().attr("data-hId");
 			bId = $(".swiper-wrapper").find(".active").attr("data-bId");
-			alert(bId);
+			/*alert(bId);*/
 			location.href="detail.html?bclassid="+bId+"&pclassid="+hId;
 		})
 	}
