@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="shortcut icon" href="images/public/favicon.ico">
+	<title>网易严选</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/dengluuu.css"/>
+	 <link rel="stylesheet" href="../css/ziti/iconfont.css">
+	<script type="text/javascript">
+		var iwidth = document.documentElement.clientWidth;
+		document.getElementsByTagName("html")[0].style.fontSize=iwidth/16+"px";
+	</script>
+</head>
+<body>
+	<!-----------------------header头部公用-->
+	<header class="container-fluid">
+		<div class="J_nav" >
+		<img src="../images/public/cai1.png"/>
+		<h3>网易严选</h3>
+		<img class="J_img2" src="../images/public/shou1.png"/>
+		<img src="../images/public/gou1.png"/>
+		</div>	
+	</header>
+	<!-------------------------section----->
+	<section>
+		<div class="w_yonghu">
+			<img class="avatar" src="http://q.qlogo.cn/qqapp/101330628/74D3CE2C376DCF4EB0D10D0AB0DCA6C4/100" data-reactid=".0.1.0.0.0.0.0">
+			<div class="w_xinxi">
+				<p class="w_name">name</p>
+				<p>普通用户</p>
+			</div>
+		</div>
+		<div class="w_xuanze">
+			<div class="w_list">
+			 <i class="icon iconfont icon-wodedingdan w_ziti"></i>
+				 <span>我的订单</span>
+			</div>
+			<div class="w_list">
+				 <i class="icon iconfont icon-youhuiquan w_ziti"></i>
+				 <span>优惠券</span>
+			</div>
+			<div class="w_list">
+				 <i class="icon iconfont icon-53a93feaaf1a2zhuanhuaneps-copy w_ziti"></i>
+				 <span>礼品卡</span>
+			</div>
+			<div class="w_list">
+				 <i class="icon iconfont icon-dizhiguanli w_ziti"></i>
+				 <span>地址管理</span>
+			</div>
+			<div class="w_list">
+				 <i class="icon iconfont icon-zhanghaoanquan w_ziti"></i>
+				 <span>账号安全</span>
+			</div>
+			<div class="w_list">
+				 <i class="icon iconfont icon-lianxikefu w_ziti"></i>
+				 <span>联系客服</span>
+			</div>
+				<div class="w_list">
+				 <i class="icon iconfont icon-bangzhuzhongxin w_ziti"></i>
+				 <span>帮助中心</span>
+			</div>
+			<div class="w_list">
+				 <i class="icon iconfont icon-yijianfankui w_ziti"></i>
+				 <span>意见反馈</span>
+			</div>
+			<div class="w_list">
+				
+			</div>
+		</div>
+		<a class="w_tuichu" href="Javascript:;">
+			退出登陆
+		</a>
+	</section>
+	<script src="../js/detail/touch.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/detail/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		touch.on('.w_tuichu', 'touchstart', function(ev){
+			ev.preventDefault();
+			window.localStorage.flag=false;
+			localStorage.removeItem("name");
+			window.location.href="../index.html";
+			
+		});
+		var name = window.localStorage.name;
+		$(".w_name").html(name);
+	</script>
+</body>
+</html>

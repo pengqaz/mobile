@@ -12,7 +12,6 @@ a,input{outline:none;}
 .clear:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
 
 
-
 .container-fluid{
 	padding:0;
 	margin:0;
@@ -33,6 +32,8 @@ header{
 	background:red;
 	flex-grow:0;
 	flex-shrink: 0;
+	/*position: relative;
+	z-index: 9999999;*/
 }
 footer{
 	width:100%;
@@ -43,13 +44,7 @@ footer{
 	flex-shrink: 0;
 	
 }
-header .foot{
-	width:100%;
-	height:50px;
-	line-height:50px;
-	padding:0;
-	
-}
+
 .foot a{
 	display: inline-block;
 	height:52px;
@@ -61,6 +56,8 @@ header .foot{
 	display: flex;
 	justify-content: center;	
 	border-right:0;
+	font-size:6vw;
+	color:#ccc;
 }
 .foot a:nth-child(2){
 	color:#ccc;
@@ -79,7 +76,6 @@ section{
 	flex-grow: 1;
 	margin:0;
 	padding:0;
-	position:relative;
 }
 .swiper-container{
 	width:100vw;
@@ -184,7 +180,8 @@ section{
 	line-height:50px;
 	border-bottom:1px solid #ccc;
 	width:100%;
-
+	display: flex;
+	justify-content: space-around;
 }
 .active span{
 	color:#ccc;
@@ -192,11 +189,16 @@ section{
 	margin-left:15px;
 }
 .active .sdan1{
+	display: inline-block;
 	font-size:2.5vw;
 	color:#f48f18;
 	border:1px solid #f48f18;
-	padding:3px;
-	margin:0 3px;
+	width:60px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	/*background:red;*/
+	margin-top:10px;
 }
 .active .sdan2{
 	font-size:2.5vw;
@@ -312,6 +314,110 @@ div.container-fluid.goodarg{
 	/*height:200vw;*/
 	width:100vw;
 }
+
+
+/*点击数量*/
+.toshop{
+	display: flex;
+	overflow: hidden;
+	/*height:0vh;*/
+	flex-direction: column;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+
+}
+.toshopping{
+	flex-grow: 1;
+	margin-bottom: 50px;
+	margin-top:50px;
+	width:100%;
+	height:0vh;
+	background:#fff;
+	z-index: 9999999;
+	overflow: hidden;
+	
+}
+.all_height{
+	height: 85vh!important;
+}
+.over{
+	overflow: hidden!important;
+}
+
+
+/*把商品加入购物车*/
+.fontshop{
+	/*margin:15px 0;*/
+	display: flex;
+	/*justify-content: space-between;*/
+}
+
+.shoppic img{
+	margin-left:0;
+	width:30vw;
+	height:auto;
+	/*border:1px solid #ccc;*/
+}
+.shopsec{
+	margin:20px 0;
+	font-size: 2.5vw;
+}
+
+.shosize h3{
+	line-height:30px;
+	font-size:3vw;
+	margin-bottom:10px;
+}
+.shosize a{
+	margin-top:15px;
+	padding:10px;
+	border:1px solid #ccc;
+	font-size: 3vw;
+	color:#ccc;
+}
+
+.contshop h3{
+	font-size:3vw;
+}
+.contshop a{
+	display: inline-block;
+	width:30px;
+	height:23px;
+	border:1px solid #999;
+	text-align: center;
+	color:#999;
+}
+.contshop a:first-child{
+	color:#ccc;
+	border:1px solid #ccc;
+}
+.contshop input{
+	width:60px;
+	text-align: center;
+	border:1px solid #999;
+}
+
+.goodmark{
+	width:30vw;
+	padding:5px;
+	background:#000;
+	color:#fff;
+	font-size: 3vw;
+	text-align: center;
+	border-radius: 10px;
+	display: none;
+}
+
+
+
+
+.on{
+	border:1px solid red !important;
+	color:red !important;
+}
+
 
 
 

@@ -3,7 +3,6 @@ section{
 		
 		height:  100%;
 		flex-grow: 1;
-		
 		overflow: scroll;
 		}
 .swiper-container {
@@ -67,6 +66,7 @@ section{
 	height: 170px;
 }
 #cp3 img{
+	
 	width:50%;
 	height: 340px;
 }
@@ -84,9 +84,8 @@ section{
   	font-size: 1rem;
  }
 #word_box3{
- 	position: absolute;
- 	top:102vh;
- 	left:4vw;	
+	
+ 
  }
  #word_box3 h4{
  	
@@ -96,3 +95,36 @@ section{
  		color:#999;
   		font-size: 1rem;
  }
+#m_box1{
+	position: relative;
+
+}
+ 
+#m_box1 li{
+	float: left;
+		width:20vh;
+		height: 40vw;
+		margin-bottom:5px;
+}
+.m_right{
+	margin-left:19%;
+}
+#m_box1 img{
+	width:37vw;
+	height: 22vh;
+	
+}
+#m_box1 h5,p{
+	text-align: center;
+}
+#m_box1 h5{
+	    font-size: .38889rem;
+	    
+}
+#m_box1 p{
+	
+	    line-height: 1;
+    font-size: .38889rem;
+    text-align: center;
+    color: #b4282d;
+}

@@ -1,20 +1,14 @@
-[	
-	{"img":"<img src= 'images/public/lun3.jpg'/>"},
-	{"img":"<img src= 'images/public/lun1.jpg'/>"},
-	{"img":"<img src= 'images/public/lun2.jpg'/>"},
-	{"img":"<img src= 'images/public/lun4.jpg'/>"},
+
+{
+		"banner":[
+			{"img":"<img src= 'images/public/lun3.jpg'/>"},
+			{"img":"<img src= 'images/public/lun1.jpg'/>"},
+			{"img":"<img src= 'images/public/lun2.jpg'/>"},
+			{"img":"<img src= 'images/public/lun4.jpg'/>"}
+		]
+}
 	
-	{"img1":"<img src='images/public/cp1.jpg'/>",
-     "cangs":"Coach制造商",
-     "pcrice":"49y元起"
-     },
-     {"img1":"<img src='images/public/cp2.jpg'/>",
-     "cangs":"Coach制造商",
-     "pcrice":"49y元起"
-     },
-     {"img1":"<img src='images/public/cp3.jpg'/>",
-     "cangs":"Coach制造商",
-     "pcrice":"49y元起"
-     }
 	
-]
+
+
+

@@ -6,6 +6,7 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="stylesheet" href="../css/public.css" />
 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<link rel="stylesheet" href="../css/animate.css" />
 		<script type="text/javascript">
 			var iwidth = document.documentElement.clientWidth;
 			document.getElementsByTagName("html")[0].style.fontSize=iwidth/16+"px";
@@ -14,20 +15,27 @@
 	<body>
 		<header>
 			<div class="w_logo"></div>
+			<div class="qudenglu">
+				已有账号？去<a href="login.html">登陆</a>
+			</div>
 		</header>
 		<section class="w_form">
 			<p class="w_zhuce">注册账号</p>
 			<div class="u-input firstelem">
 	            <div class="u-label">帐号：</div>
-	            <input type="text" name="email" id="" placeholder="网易邮箱/手机号/其他邮箱" class="i-inpt">
+	            <input type="text" name="email" id="uname" placeholder="网易邮箱/手机号/其他邮箱" class="i-inpt">
+	            
+	            <div class="u-label cuowu animated shake" style="display: none;"><span></span>请输入正确的格式</div>
 	        </div>
 	        <div class="u-input firstelem">
 	            <div class="u-label">密码：</div>
-	            <input type="text" name="mima" id="" placeholder="6-16位密码，区分大小写" class="i-inpt">
+	            <input type="password" name="mima" id="upass" placeholder="6-16位密码，区分大小写" class="i-inpt">
+	            <div class="u-label cuowu animated shake" style="display: none;"><span></span>请输入正确的格式</div>
 	        </div>
 	        <div class="u-input firstelem">
 	            <div class="u-label">确认密码：</div>
-	            <input type="text" name="mimaa" id="" placeholder="6-16位密码，区分大小写" class="i-inpt">
+	            <input type="password" name="mimaa" id="" placeholder="6-16位密码，区分大小写" class="i-inpt">
+	            <div class="u-label cuowu animated shake" style="display: none;"><span></span>请输入正确的格式</div>
 	        </div>
 	        <div class="u-input firstelem">
 	            <div class="u-label">
@@ -53,6 +61,7 @@
 	        <div class="u-input firstelem">
 	            <div class="u-label">手机号：</div>
 	            <input type="text" name="" id="" placeholder="11位手机号" class="i-inpt">
+	            <div class="u-label cuowu animated shake" style="display: none;"><span></span>请输入正确的格式</div>
 	        </div>
 	        <div class="u-input firstelem">
 	        	 <div class="u-label"></div>
@@ -65,14 +74,14 @@
 	         <div class="u-input firstelem">
 	            <div class="u-label">短信验证码：</div>
 	            <div class="i-inpt1">
-	            	<input type="text" name="" id="" placeholder="输入短信验证码">
-	          		<a href="">获取验证码</a>
+	            	<input type="text" name="" id="yanzhengma" placeholder="输入短信验证码">
+	          		<a href="Javascript:;" class="huoquma">获取验证码</a>
 	            </div>
 	            
 	        </div>
 	         <div class="u-input firstelem">
 	        	 <div class="u-label"></div>
-	            <div class="w_qiehuan i-input3 i-inpt">  
+	            <div class="w_qiehuan i-input3 i-inpt" id="btn" disabled="none">  
 					注册
 	            </div>
 	            
@@ -110,27 +119,34 @@
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../js/touch.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-		    var target = document.getElementById("target");
+		   	var flag = true;
 			touch.on('#target', 'touchstart', function(ev){
 				ev.preventDefault();
-				$(".pintu").fadeIn();
+				if(flag){
+					$(".pintu").fadeIn();
+				}
+				
 			});
 			
 			
 			var dx, dy;
 			//var kapian = document.getElementById("kapian");
+		
 			touch.on('#target', 'drag', function(ev){
-				dx = dx || 0;
-				dy = dy || 0;
-				if(ev.x>220){
-					ev.x=220;
-				}else if(ev.x<0){
-					ev.x=0;
+				if(flag){
+					dx = dx || 0;
+					dy = dy || 0;
+					if(ev.x>220){
+						ev.x=220;
+					}else if(ev.x<0){
+						ev.x=0;
+					}
+					var offx = dx + ev.x + "px"
+					console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
+					this.style.webkitTransform = "translate3d(" + offx + ",0 ,0)";
+					kapian.style.webkitTransform = "translate3d(" + offx + ",0 ,0)";
 				}
-				var offx = dx + ev.x + "px"
-				console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
-				this.style.webkitTransform = "translate3d(" + offx + ",0 ,0)";
-				kapian.style.webkitTransform = "translate3d(" + offx + ",0 ,0)";
+				
 			});
 			
 			touch.on('#target', 'dragend', function(ev){
@@ -144,10 +160,102 @@
 					$(".huakuai").css({
 						"background":'url("https://captcha.reg.163.com/v2/images/slider_valid.png") no-repeat',
 						"background-size":"100% 100%"
-						}).prop("id","aaa");
+					});
 					$('.pintu').fadeOut();
-					
+					flag = false;
 				}
+				
+			});
+			/*
+			 * 
+			 * --------------------------------------
+			 * 
+			 * 
+			 *        登陆注册
+			 * 
+			 * 
+			 * -----------------------------------------
+			 * 
+			 */
+			$("#btn").click(function(){
+				var uname=$("#uname").val();
+				var upass=$("#upass").val();
+				
+				$.ajax({
+					url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+					data:{
+						status:"register",
+						userID:uname,
+						password:upass
+					},
+					success:function(data){
+						if(data == 1){
+							alert("注册成功")
+							window.location.href="login.html";
+						}
+					}				
+				})			
+			})
+			$("input").eq(0).focus(function  () {
+				$(this).css("border","1px solid rgb(74,175, 233)");
+				$(this).next(".shake").fadeOut();
+				
+				
+			});
+			$("input").eq(0).blur(function  () {
+				$(this).css("border","1px solid rgb(221, 221, 221)");
+				var reg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+				var val = $(this).val();
+				if(!reg.test(val)){
+					$(this).next(".shake").fadeIn();
+				}
+			});
+			$("input").eq(1).focus(function  () {
+				$(this).css("border","1px solid rgb(74,175, 233)");
+				$(this).next(".shake").fadeOut();
+				
+				
+			});
+			$("input").eq(1).blur(function  () {
+				$(this).css("border","1px solid rgb(221, 221, 221)");
+				var reg = /^[a-z0-9_-]{6,18}$/;
+				var val = $(this).val();
+				if(!reg.test(val)){
+					$(this).next(".shake").fadeIn();
+				}
+			});
+			$("input").eq(2).focus(function  () {
+				$(this).css("border","1px solid rgb(74,175, 233)");
+				$(this).next(".shake").fadeOut();
+				
+				
+			});
+			$("input").eq(2).blur(function  () {
+				$(this).css("border","1px solid rgb(221, 221, 221)");
+				var reg = /^[a-z0-9_-]{6,18}$/;
+				var val = $(this).val();
+				if(!reg.test(val)){
+					$(this).next(".shake").fadeIn();
+				}
+			});
+			$("input").eq(3).focus(function  () {
+				$(this).css("border","1px solid rgb(74,175, 233)");
+				$(this).next(".shake").fadeOut();
+				
+				
+			});
+			$("input").eq(3).blur(function  () {
+				$(this).css("border","1px solid rgb(221, 221, 221)");
+				var reg = /^1[3|5|7|8|][0-9]{9}/;
+				var val = $(this).val();
+				if(!reg.test(val)){
+					$(this).next(".shake").fadeIn();
+				}
+			});
+		
+			touch.on('.huoquma', 'touchstart', function(ev){
+				ev.preventDefault();
+				$('#yanzhengma').val("7878");
 				
 			});
 	    </script>
