@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 body,html,h1,h2,h3,h4,h5,h6,ol,ul,li,dl,dd,dt,input,form,fieldset,legend,p,table,img,select{padding:0;margin:0;}
@@ -15,17 +15,52 @@ a,input{outline:none;}
 .fl{float:left;}
 .fr{float:right;}
 .clear:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
-body{font-family: "微软雅黑";line-height: 1;}
 
+body{font-family: "微软雅黑";line-height: 1;
+display: flex;flex-direction:column; justify-content: space-between;
+height: 100%;
+	
 
+}
 
+		/*header公用样式部分*/
 
+header{	
+		background: #FFFFFF;
+		flex-grow:0;
+		flex-shrink:0;
+		width: 100%;
+		height: 8vh;
+		border-bottom: 3px solid #F4F4F4;
+		}
+header .J_nav{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		line-height:49px;
+		}
+header .J_nav h3{
+	line-height: 7vh;
+	text-align: center;
+	font-family: PingFangSC-Light,helvetica,'Heiti SC';
+	color: black;
+	font-size:3.5vh;
+	position: absolute;
+	left: 35%;
+}		
 
-
-
-
-
-
+		
+header .J_nav img{
+		display:block;
+		margin-top:1.5vh;
+		width:7.8vw;
+		height:34px;
+}
+header .J_nav .J_img2{
+	position: absolute;
+	left:80%;
+}
 
 /*footer开始*/
 #more{
@@ -79,21 +114,3 @@ body{font-family: "微软雅黑";line-height: 1;}
 #foot p{
 	color:#777777;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
