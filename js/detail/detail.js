@@ -168,7 +168,8 @@ $(function(){
 		var goodpic = $(".shoppic img").attr("src");
 		var goodprice = $(".goodpr").html();
 		var goodnum = $(".text").val();
-//		var goodid = 
+		var goodid = $(".goodbox").attr("data-id");
+//		alert(goodid);
 		var goodsize;
 		var sizea = $("#goodsize a");
 		for(var i =0;i<sizea.length;i++){
@@ -181,8 +182,8 @@ $(function(){
 			goodpic:goodpic,
 			goodprice:goodprice,
 			goodnum:goodnum,
-			goodsize:goodsize
-			
+			goodsize:goodsize,
+//			goodsid:goodid
 		}
 		if(!buycar.length){
 			buycar.push(obj);
@@ -190,7 +191,7 @@ $(function(){
 		}else{
 			var num=0;
 			for (var i =0;i<buycar.length;i++) {
-				if(buycar[i].goodsid==id){
+				if(buycar[i].goodsid==goodid){
 					buycar[i].num++;
 					localStorage.buycar=JSON.stringify(buycar)				
 				}else{
@@ -212,7 +213,6 @@ $(function(){
 	
 	
 });
-
 
 
 
