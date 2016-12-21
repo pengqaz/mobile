@@ -37,7 +37,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "0",
+						"imgid": "3",
 						"img": "../images/list_img/beizi.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -45,7 +45,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "1",
+						"imgid": "4",
 						"img": "../images/list_img/bed.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -61,13 +61,13 @@
 			"classbanner": "../images/list_img/list_banner2.jpg",
 			"goods1": {
 				"goodsbt": {
-					"goodid": "1",
+					"goodid": "5",
 					"goodbt": "锅具",
 					"gooddes": "一口好锅，炖煮一日三餐"
 				},
 				"product": [{
 					"thing0": {
-						"imgid": "0",
+						"imgid": "6",
 						"img": "../images/list_img/guo1.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -75,7 +75,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "1",
+						"imgid": "7",
 						"img": "../images/list_img/guo2.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -83,7 +83,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "2",
+						"imgid": "8",
 						"img": "../images/list_img/guo3.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -91,7 +91,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "0",
+						"imgid": "9",
 						"img": "../images/list_img/guo4.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -99,7 +99,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "1",
+						"imgid": "10",
 						"img": "../images/list_img/guo5.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -110,7 +110,7 @@
 			}
 		}, {
 			"classid": "2",
-			"classname": "餐厨",
+			"classname": "配件",
 			"classbname": "贴身的，要亲肤",
 			"classbanner": "../images/list_img/list_banner3.jpg",
 			"goods1": {
@@ -121,7 +121,7 @@
 				},
 				"product": [{
 					"thing0": {
-						"imgid": "0",
+						"imgid": "11",
 						"img": "../images/list_img/bao1.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -129,7 +129,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "1",
+						"imgid": "12",
 						"img": "../images/list_img/bao2.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -137,7 +137,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "2",
+						"imgid": "13",
 						"img": "../images/list_img/bao3.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -145,7 +145,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "0",
+						"imgid": "14",
 						"img": "../images/list_img/bao4.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
@@ -153,7 +153,7 @@
 						}
 					},{
 					"thing0": {
-						"imgid": "1",
+						"imgid": "15",
 						"img": "../images/list_img/bao5.png",
 						"thingbt": "秋冬保暖加厚澳洲羊毛被",
 						"thingprice": "￥459",
