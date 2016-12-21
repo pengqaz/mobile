@@ -6,6 +6,7 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="stylesheet" href="../css/public.css" />
 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<link rel="stylesheet" href="../css/animate.css" />
 		<script type="text/javascript">
 			var iwidth = document.documentElement.clientWidth;
 			document.getElementsByTagName("html")[0].style.fontSize=iwidth/16+"px";
@@ -14,16 +15,21 @@
 	<body>
 		<header>
 			<div class="w_logo"></div>
+			<div class="qudenglu">
+				已有账号？去<a href="login.html">登陆</a>
+			</div>
 		</header>
 		<section class="w_form">
 			<p class="w_zhuce">注册账号</p>
 			<div class="u-input firstelem">
 	            <div class="u-label">帐号：</div>
-	            <input type="text" name="email" id="" placeholder="网易邮箱/手机号/其他邮箱" class="i-inpt">
+	            <input type="text" name="email" id="uname" placeholder="网易邮箱/手机号/其他邮箱" class="i-inpt">
+	            
+	            <div class="u-label cuowu animated shake" style="display: none;"><span></span>帐号须由6-18个字符组成</div>
 	        </div>
 	        <div class="u-input firstelem">
 	            <div class="u-label">密码：</div>
-	            <input type="text" name="mima" id="" placeholder="6-16位密码，区分大小写" class="i-inpt">
+	            <input type="text" name="mima" id="upass" placeholder="6-16位密码，区分大小写" class="i-inpt">
 	        </div>
 	        <div class="u-input firstelem">
 	            <div class="u-label">确认密码：</div>
@@ -72,7 +78,7 @@
 	        </div>
 	         <div class="u-input firstelem">
 	        	 <div class="u-label"></div>
-	            <div class="w_qiehuan i-input3 i-inpt">  
+	            <div class="w_qiehuan i-input3 i-inpt" id="btn" disabled="none">  
 					注册
 	            </div>
 	            
@@ -150,6 +156,45 @@
 				}
 				
 			});
+			/*
+			 * 
+			 * --------------------------------------
+			 * 
+			 * 
+			 *        登陆注册
+			 * 
+			 * 
+			 * -----------------------------------------
+			 * 
+			 */
+			$("#btn").click(function(){
+				var uname=$("#uname").val();
+				var upass=$("#upass").val();
+				
+				$.ajax({
+					url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+					data:{
+						status:"register",
+						userID:uname,
+						password:upass
+					},
+					success:function(data){
+						if(data == 1){
+							window.location.href="login.html";
+						}
+					}				
+				})			
+			})
+			$("input").focus(function  () {
+				$(this).css("border","1px solid rgb(74,175, 233)");
+				$(this).next(".shake").fadeOut();
+				
+			});
+			$("input").blur(function  () {
+				$(this).css("border","1px solid rgb(221, 221, 221)");
+				$(this).next(".shake").fadeIn();
+			});
+			
 	    </script>
 	</body>
 </html>

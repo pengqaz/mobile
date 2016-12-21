@@ -12,8 +12,16 @@ body{
 header{
 	display: flex;
 	height:10vh;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
+	background-color: #efefef;
+	font-size: 0.5rem;
+}
+header a{
+	color:#ca5252;
+}
+header a:hover{
+	color:#ad4747;
 }
 .w_logo{
 	height:4vh;
@@ -42,7 +50,7 @@ header{
 	line-height:0.8rem ;
 	font-size: 0.5rem;
 	height:0.8rem;
-	width:35vw;
+	width:30vw;
 	text-align: right;
 }
 .firstelem .i-inpt{
@@ -51,6 +59,7 @@ header{
 	padding: 0;
 	margin: 0;
 	font-size: 0.5rem;
+	border:1px solid #999 ;
 }
 			/*
 			 * --------------
@@ -150,4 +159,18 @@ header{
 }
 .m-cp a{
 	color: #999;
+}
+.firstelem .cuowu{
+	font-size: 0.02rem;
+	width:20vw;
+	color:rgb(250, 91, 91);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.firstelem .cuowu span{
+	background: url(../images/public/sprite.png) no-repeat -64px -102px;
+	height:0.3rem;
+	width:0.3rem;
+	display: block;
 }
