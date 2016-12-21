@@ -1,7 +1,7 @@
 {
 	"classify":[
 		{
-			"classid":"1",
+			"classid":"0",
 			"classname":"bowl",
 			"goods":
 			{	
@@ -16,8 +16,10 @@
 					"argname":"商品参数",
 					"add":"日本",
 					"caizhi":"日本陶瓷黏土",
-					"size":"5.0小蝶，7.0大汤碗，8.0大平盘，9.0大鱼盘",
-					"gongyi":"釉下彩"
+					"size":["5.0小蝶","7.0大汤碗","8.0大平盘","9.0大鱼盘"],
+					"sizeprice":["￥25.00","￥35.00","￥45.00","￥55.00"],
+					"gongyi":"釉下彩",
+					"argpic":"../images/detail/pic1.jpg"
 					},
 				"goodpic":[
 					"../images/detail/list/1.jpg",
@@ -84,11 +86,11 @@
 			
 		},
 		{
-			"classid":"2",
+			"classid":"1",
 			"classname":"cotton",
 			"goods":
 				{	
-				"goodsid":"2",
+				"goodsid":"1",
 				"banner":["../images/detail/ban9.png","../images/detail/ban2.jpg","../images/detail/ban3.jpg","../images/detail/ban4.jpg","../images/detail/ban5.jpg"],
 				"fontname":{
 					"name":"日本制造 美浓烧樱花餐具",
@@ -100,7 +102,8 @@
 					"add":"日本",
 					"caizhi":"日本陶瓷黏土",
 					"size":"5.0小蝶，7.0大汤碗，8.0大平盘，9.0大鱼盘",
-					"gongyi":"釉下彩"
+					"gongyi":"釉下彩",
+					"argpic":"../images/detail/pic1.jpg"
 				},
 				"goodpic":[
 					
