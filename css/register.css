@@ -1,0 +1,153 @@
+html,body{
+	height:100%;
+	width:100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #efefef;
+	
+}
+header{
+	display: flex;
+	height:10vh;
+	justify-content: flex-start;
+	align-items: center;
+}
+.w_logo{
+	height:4vh;
+	width:20vw;
+	background: url(//ursdoccdn.nosdn.127.net/webzj_cdnbase/sprite1.png) no-repeat -18px -19px;
+}
+.w_form{
+	background: #fff;
+	height:60vh;
+	padding: 1rem;
+}
+.w_zhuce{
+	font-size: 0.5rem;
+	line-height: 0.8rem;
+	color: rgb(202, 82, 82);
+}
+.u-input{
+	box-sizing: initial;
+	height:1.3rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0.2rem 0;
+}
+.u-label{
+	line-height:0.8rem ;
+	font-size: 0.5rem;
+	height:0.8rem;
+	width:35vw;
+	text-align: right;
+}
+.firstelem .i-inpt{
+	height:0.8rem;
+	width:6rem;
+	padding: 0;
+	margin: 0;
+	font-size: 0.5rem;
+}
+			/*
+			 * --------------
+			 *     验证码
+			 * 
+			 * -------------*/
+.yanzheng{
+	border-radius:20px;
+	height:0.8rem;
+	width:6rem;
+	border: 1px solid #cbcbcb;
+	background-color:  #F9F9F9;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+.huakuai{
+	height:1rem;
+	width:1.7rem;
+	border-radius:20px;
+	background: url("https://captcha.reg.163.com/v2/images/slider.png") no-repeat;
+	background-size:100% 100%;
+	border: 1px solid #cbcbcb;
+	cursor: pointer;
+	z-index: 1111;
+	
+}
+
+.huakuai1{
+	font-size:0.3rem ;
+	color: rgb(168, 168, 168);
+	z-index: 100;
+}
+.pintu{
+	position: relative;
+	top:-3rem;
+}
+.pintu img{
+	position: absolute;
+	
+}
+.w_qiehuan{
+	font-size:0.4rem;
+	color:#4cb5ff;
+}
+.w_qiehuan p:last-child{
+	color:#999;
+}
+.firstelem .i-inpt1{
+	height:1.3rem;
+	width:6rem;
+	padding: 0;
+	margin: 0;
+	font-size: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.firstelem .i-inpt1 input{
+	height:0.8rem;
+	width:4rem;
+	padding: 0;
+	margin: 0;
+	font-size: 0.5rem;
+}
+.firstelem .i-inpt1 a{
+	height:0.8rem;
+	width:1.8rem;
+	padding: 0;
+	margin: 0;
+	font-size: 0.3rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background-color: #a1d1f6;
+	color:#fff;
+}
+.i-input2 p{
+	font-size: 0.3rem;
+	color:#999;
+}
+.firstelem .i-input3{
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.8rem;
+	color: #fff;
+	background-color: #e66363;
+}
+.m-cp{
+	margin-top: 1rem;
+	font-size:0.3rem ;
+	display: flex;
+	flex-direction:column ;
+	justify-content: center;
+	align-items: center;
+	color: #999;
+}
+.m-cp a{
+	color: #999;
+}

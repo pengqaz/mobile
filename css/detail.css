@@ -13,6 +13,306 @@ a,input{outline:none;}
 
 
 
+.container-fluid{
+	padding:0;
+	margin:0;
+}
+
+html,body{
+	height:100%;
+	
+}
+body{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+header{
+	width:100%;
+	height:50px;
+	background:red;
+	flex-grow:0;
+	flex-shrink: 0;
+}
+footer{
+	width:100%;
+	height:50px;
+	padding:0;
+	margin: 0;
+	flex-grow:0;
+	flex-shrink: 0;
+	
+}
+header .foot{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	padding:0;
+	
+}
+.foot a{
+	display: inline-block;
+	height:52px;
+	line-height:50px;
+	border:1px solid #ccc;
+	font-size:3.5vw;
+}
+.foot a:first-child{
+	display: flex;
+	justify-content: center;	
+	border-right:0;
+}
+.foot a:nth-child(2){
+	color:#ccc;
+	border-right:0;
+}
+.foot a:last-child{
+	background:red;	
+	color:#fff;
+}
+.foot a:first-child img{
+	transform: scale(0.8);
+}
+section{
+	overflow:scroll;
+	display: flex;
+	flex-grow: 1;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+.swiper-container{
+	width:100vw;
+	height:auto;
+}
+.swiper-container .swiper-wrapper{
+	width:100vw;
+	height:auto;
+}
+.swiper-wrapper img{
+	width:100vw;
+	height:auto;
+}
+
+
+
+/*回到顶部的按钮*/
+.top{
+	width:50px;
+	height:50px;
+	background:#fff;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	font-size:20px;
+	color:#ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right:10px;
+	bottom:10px;
+	display:none;
+}
+
+/*商品的name*/
+.goodname{
+	padding-top:25px;
+	/*background:red;*/
+}
+.goodname p:first-child{
+	font-size:4vw;
+	color:#999;
+}
+.goodname p:nth-child(2){
+	font-size:3vw;
+	color:#ccc;
+}
+.goodname p:last-child{
+	font-size:3vw;
+	color:red;
+}
+
+/*退货  退款*/
+.manner{
+	margin-top:15px;
+	display: flex;
+	/*padding:10px;*/
+	justify-content: space-around;
+	font-size:2.5vw;
+	color:#999;
+	border-bottom:1px solid #ccc;
+}
+.manner b{
+	display: inline-block;
+	width:5px;
+	height:5px;
+	border-radius: 50%;
+	background:#ccc;
+	margin-right: 3px;
+}
+
+/*规格  数量*/
+.number{
+	display: inline-block;
+	height:50px;
+	line-height:50px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom:1px solid #ccc;
+	width:100%;
+}
+
+.number span{
+	text-align: left;
+	align-self: flex-start;
+	color:#ccc;
+	font-size:2.5vw;
+	margin-left:15px;
+}
+.number b{
+	text-align: right;
+	align-self: flex-end;
+	color:#ccc;
+	font-size:2.5vw;
+	margin-right:15px;
+}
+
+/*促销活动*/
+.active{
+	display: inline-block;
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	width:100%;
+
+}
+.active span{
+	color:#ccc;
+	font-size:2.5vw;
+	margin-left:15px;
+}
+.active .sdan1{
+	font-size:2.5vw;
+	color:#f48f18;
+	border:1px solid #f48f18;
+	padding:3px;
+	margin:0 3px;
+}
+.active .sdan2{
+	font-size:2.5vw;
+	color:#f48f18;	
+	padding:3px;
+	margin:0 3px;
+	padding-right:5px;
+	
+}
+.active .sdan3{
+	color:#ccc;
+	padding-right:10px;
+	
+}
+.kong{
+	width:100%;
+	height:10px;
+	background:#f4f4f4;
+}
+
+
+/*评价*/
+.comment{
+	border-bottom:1px solid #ccc;
+}
+.comment a{
+	height:50px;
+	line-height:50px;
+	/*background:red;*/
+	font-size:2.5vw;
+	color:#ccc;
+	display: block;
+	display: flex;
+	justify-content: space-between;
+}
+.comment a b{
+	margin-left:15px;
+}
+.comment a span{
+	margin-right:15px;
+}
+
+
+/*评价内容*/
+.contbt{
+	padding-top:10px;
+	display: flex;
+	justify-content: space-between;
+	line-height:50px;
+}
+.contbt p:first-child{
+	display: flex;
+	justify-content: space-around;
+}
+.contbt p:first-child span{
+	display: inline-block;
+	width:50px;
+	height:50px;
+}
+.contbt p:first-child img{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	margin-top:5px;
+}
+.contbt p:first-child b{
+	display: inline-block;
+	margin-left:5px;
+}
+.contbt p:last-child{
+	color:#ccc;
+}
+.contcent .befau{
+	margin-top: 15px;
+	font-size: 3vw;
+	color:#ccc;
+}
+.contcent .beaull{
+	font-size: 2.5vw;
+	color:#ccc;
+}
+
+/*商品参数*/
+
+.goodarg .argnamebt{
+	line-height:20px;
+	margin-left:15px;
+}
+.argnamebt p{
+	padding:10px 0;
+	margin:5px 0;
+	background:#f7f7f7;
+	font-size: 2.5vw;
+	color:#ccc;
+}
+.argnamebt p:first-child{
+	background:none;
+	font-size: 3.5vw;
+}
+
+.argnamebt p span:first-child{
+	margin:0 50px 0 10px;
+}
+
+.argnamelist{
+	margin-top:15px;
+	
+}
+div.container-fluid.goodarg{
+	padding-left:0;
+}
+.argnamelist img{
+	/*height:200vw;*/
+	width:100vw;
+}
+
 
 
 

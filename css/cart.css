@@ -1,0 +1,26 @@
+body{
+	background-color: #f4f4f4;
+	font-size: 24px;
+	color: #666;
+}
+
+.explain{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+}
+.explain-item{
+	box-flex:1;
+	margin: 20px auto 0;
+	list-style: circle;
+}
+.container{
+	position: absolute;
+    top: 0rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 12rem;
+    margin: auto;
+    text-align: center;
+}
