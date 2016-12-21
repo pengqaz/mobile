@@ -51,7 +51,9 @@
 						password:upass
 					},
 					success:function(data){
-						alert(data)
+						window.localStorage.flag=true;
+						window.localStorage.name=uname;
+						window.location.href="denglu.html";
 					}				
 				})			
 			});
