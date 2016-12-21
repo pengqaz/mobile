@@ -38,13 +38,17 @@ header{
 		width: 100%;
 		height: 8vh;
 		border-bottom: 3px solid #F4F4F4;
+		z-index: 15;
+	
 		}
 header .J_nav{
 		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		background: #FFFFFF;
 		line-height:49px;
+			z-index: 10;
 		}
 header .J_nav h3{
 	line-height: 7vh;
@@ -67,20 +71,37 @@ header .J_nav .J_img2{
 	position: absolute;
 	left:80%;
 }
-<<<<<<< HEAD
-.menu｛
-	width:100%;
-	height:68px;
-	border: 1px solid red;
-	background: yellow;
-	
-｝.menu ul li img{
-	display: inline-block;
-    width: 40px;
-    height: 40px;
-  
-=======
+#J_menubox{
+	position: absolute;
+	top:-2vh;
+	left:0;
+	width: 100%;
+	height: 10%;
+	z-index: 2;
 
+	 background: #FFFFFF;
+	
+}
+#J_menubox ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	line-height:5vh;
+}  
+#J_menubox ul li img{
+	width:4cw;
+	height: 4vh;
+}
+#J_menubox ul li h4{
+	    display: block;
+	    font-size: .33333rem;
+	    color: #666;
+	    line-height: 1;
+	    margin-top:2vw;
+	    margin-left:1vw;
+	    
+	   
+}
 /*footer开始*/
 #more{
 	width:100%;
@@ -132,5 +153,4 @@ header .J_nav .J_img2{
 }
 #foot p{
 	color:#777777;
->>>>>>> origin/master
 }
