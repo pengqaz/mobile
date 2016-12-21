@@ -30,38 +30,95 @@
 	            <input type="text" name="mimaa" id="" placeholder="6-16位密码，区分大小写" class="i-inpt">
 	        </div>
 	        <div class="u-input firstelem">
-	            <div class="u-label">验证码：</div>
+	            <div class="u-label">
+	            	验证码：
+	            </div>
 	            <div class="i-inpt yanzheng">
 	            	<div class="pintu" style="display: none;">
 	            			<img src="../images/public/1470922837206_779395020.jpg">
 	            			<img id="kapian" src="../images/public/1470922837206_249290449.png">
 	            			
-	            		</div>
+	            	</div>
 	            	<div class="huakuai" id="target">
 	            		
-	            		<img class="lu" src="https://captcha.reg.163.com/v2/images/slider.png">
 	            	</div>
 	            	
 	            	<div class="huakuai1">
 	            		按住滑块，拖动完成上方拼图
 	            	</div>
-	            <div>
+	            </div>
 	
 	        </div>
+	          
+	        <div class="u-input firstelem">
+	            <div class="u-label">手机号：</div>
+	            <input type="text" name="" id="" placeholder="11位手机号" class="i-inpt">
+	        </div>
+	        <div class="u-input firstelem">
+	        	 <div class="u-label"></div>
+	            <div class="w_qiehuan i-input">  
+	            	<p>切换到国际手机</p>
+	            	<p>忘记密码时，可通过手机快速找回密码</p>
+	            </div>
 	            
-	        
+	        </div>
+	         <div class="u-input firstelem">
+	            <div class="u-label">短信验证码：</div>
+	            <div class="i-inpt1">
+	            	<input type="text" name="" id="" placeholder="输入短信验证码">
+	          		<a href="">获取验证码</a>
+	            </div>
+	            
+	        </div>
+	         <div class="u-input firstelem">
+	        	 <div class="u-label"></div>
+	            <div class="w_qiehuan i-input3 i-inpt">  
+					注册
+	            </div>
+	            
+	        </div>
+	        <div class="u-input firstelem">
+	        	 <div class="u-label"></div>
+	            <div class="w_qiehuan i-input2">  
+	            	
+	            	<p> 用户注册即代表同意《服务条款》和《网络游戏用户隐私保护</p>
+	            	<p>和个人信息利用政策》</p>
+	            	
+	            </div>
+	            
+	        </div>
 		</section>
+		<div class="m-cp">
+        <p>
+        	<a href="http://corp.163.com/eng/about/overview.html" target="_blank">
+        	About NetEase</a>
+        	-
+        	<a href="http://gb.corp.163.com/gb/about/overview.html" target="_blank">
+        		公司简介</a>-<a href="http://gb.corp.163.com/gb/contactus.html" target="_blank">联系方式</a>
+        		-
+        		<a href="http://reg.163.com/help/help_oauth2.html?v=20141215" target="_blank">OAuth2.0认证</a>
+        		-
+        		<a href="http://corp.163.com/gb/job/job.html" target="_blank">招聘信息</a>
+        		-
+        		<a href="http://help.163.com/" target="_blank">客户服务</a>-<a href="http://gb.corp.163.com/gb/legal.html" target="_blank">
+        			相关法律</a>-
+        			<a href="http://emarketing.biz.163.com/" target="_blank">网络营销</a>
+        </p>
+        <p>网易公司版权所有 ©1997-2016</p>
+      </div>	
+		
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../js/touch.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+		    var target = document.getElementById("target");
 			touch.on('#target', 'touchstart', function(ev){
 				ev.preventDefault();
 				$(".pintu").fadeIn();
 			});
 			
-			var target = document.getElementById("target");
+			
 			var dx, dy;
-			var kapian = document.getElementById("kapian");
+			//var kapian = document.getElementById("kapian");
 			touch.on('#target', 'drag', function(ev){
 				dx = dx || 0;
 				dy = dy || 0;
@@ -77,20 +134,18 @@
 			});
 			
 			touch.on('#target', 'dragend', function(ev){
-				if(ev.x>220){
-					ev.x=220;
-				}else if(ev.x<0){
-					ev.x=0;
-				}
+				
 				dx += ev.x;
 				dy += ev.y;
 				console.log(dx);
-				if(dx>125 && dx<136){
-					$(".huakuai1").html("验证成功");
+				if(dx>120 && dx<145){
+					$(".huakuai1").html("");
 					$(".yanzheng").css("background",'url("../images/public/sprite.png") no-repeat 230px -95px');
-					$(".lu").attr("src","https://captcha.reg.163.com/v2/images/slider_valid.png");
+					$(".huakuai").css({
+						"background":'url("https://captcha.reg.163.com/v2/images/slider_valid.png") no-repeat',
+						"background-size":"100% 100%"
+						}).prop("id","aaa");
 					$('.pintu').fadeOut();
-					$(".huakuai").fadeOut();
 					
 				}
 				
