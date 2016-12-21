@@ -5,13 +5,11 @@
 			{"img":"<img src= 'images/public/lun1.jpg'/>"},
 			{"img":"<img src= 'images/public/lun2.jpg'/>"},
 			{"img":"<img src= 'images/public/lun4.jpg'/>"}
-		],
-		"list":{
-			"img1":["<img src='images/public/cp22.png'/>","<img src='images/public/cp22.png'/>","<img src='images/public/cp22.png'/>"],
-			"name":["300根水洗棉纯色","300根水洗棉纯色","300根水洗棉纯色"],
-			"price":["¥199","¥199","¥199"]
-			}
-	}
+		]
+		
+		
+		
 	
+	}
 
 ]

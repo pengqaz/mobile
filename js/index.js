@@ -9,16 +9,17 @@ $(document).ready(function(){
 			$(".swiper-wrapper").html(str);
 			mySwiper.update();
 		}
+		
 		var arr="";
-		for(var i=0;i<data[0]["list"].length; i++){
-			
+		for(var i=0;i<data[0].list.length; i++){
+			alert(data[0].list.length);
 			arr+='<li>'
-						"<a href=''>"+data[0]["list"][i].img+"</a>"
-						"<h5>"+data[0]["list"][i].name+"</h5>"
-						"<p>"+data+[0]["list"][i].price+"</p>"
+						"<a href=''>"+data[0].list.img1[i]+"</a>"
+//						"<h5>"+data[0]["list"][i].name+"</h5>"
+//						"<p>"+data+[0]["list"][i].price+"</p>"
 				'</li>'
 				$("#m_box1").html(arr);	
-				console.log(data);
+				
 			
 		}
 		
