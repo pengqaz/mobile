@@ -1,20 +1,17 @@
-[	
-	{"img":"<img src= 'images/public/lun3.jpg'/>"},
-	{"img":"<img src= 'images/public/lun1.jpg'/>"},
-	{"img":"<img src= 'images/public/lun2.jpg'/>"},
-	{"img":"<img src= 'images/public/lun4.jpg'/>"},
+[
+	{
+		"banner":[
+			{"img":"<img src= 'images/public/lun3.jpg'/>"},
+			{"img":"<img src= 'images/public/lun1.jpg'/>"},
+			{"img":"<img src= 'images/public/lun2.jpg'/>"},
+			{"img":"<img src= 'images/public/lun4.jpg'/>"}
+		],
+		"list":{
+			"img1":["<img src='images/public/cp22.png'/>","<img src='images/public/cp22.png'/>","<img src='images/public/cp22.png'/>"],
+			"name":["300根水洗棉纯色","300根水洗棉纯色","300根水洗棉纯色"],
+			"price":["¥199","¥199","¥199"]
+			}
+	}
 	
-	{"img1":"<img src='images/public/cp1.jpg'/>",
-     "cangs":"Coach制造商",
-     "pcrice":"49y元起"
-     },
-     {"img1":"<img src='images/public/cp2.jpg'/>",
-     "cangs":"Coach制造商",
-     "pcrice":"49y元起"
-     },
-     {"img1":"<img src='images/public/cp3.jpg'/>",
-     "cangs":"Coach制造商",
-     "pcrice":"49y元起"
-     }
-	
+
 ]
