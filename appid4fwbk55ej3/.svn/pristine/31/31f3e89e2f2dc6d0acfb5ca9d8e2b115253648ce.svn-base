@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="../images/public/favicon.ico">
+		<title>网易严选列表页</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../boot/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.4.0.min.css"/>
+	</head>
+	<body>
+	<!-----------------------header头部公用-->
+	<!--<header class="container-fluid">
+		<div class="J_nav" >
+		<img src="images/public/cai1.png"/>
+		<h3>网易严选</h3>
+		<img class="J_img2" src="images/public/shou1.png"/>
+		<img src="images/public/gou1.png"/>
+		</div>	
+	</header>-->
+	<!--lsnav开始-->
+	<div id="lsnav">
+		<div class="swiper-container lsnav">
+		    <ul class="swiper-wrapper">
+		        <li class="swiper-slide active" data-bId="0">居家</li>
+		       	<li class="swiper-slide" data-bId="1">厨具</li>
+		       	<li class="swiper-slide" data-bId="2">配件</li>
+		       	<li class="swiper-slide" data-bId="3">服装</li>
+		       	<li class="swiper-slide" data-bId="4">洗护</li>
+		       	<li class="swiper-slide" data-bId="5">婴童</li>
+		       	<li class="swiper-slide" data-bId="6">杂货</li>
+		       	<li class="swiper-slide" data-bId="7">饮食</li>
+		       	<li class="swiper-slide" data-bId="8">其他</li>
+		    </ul>  
+		</div>
+	</div>
+	<!--lsnav结束-->
+	<div id="wrap" class="clearfix">
+		<!--banner开始-->
+		<section id="list_banner" class="container-fluid">			
+			<div class="img"><img src="../images/list_img/list_banner.jpg"/></div>
+			<div class="wrap"></div>
+				<div class="cnt">
+					<div class="name text-center">回家，放松身心</div>
+					<div class="line text-center"></div>
+				</div>
+		</section>
+		<!--banner结束-->
+	
+	
+		<!--content开始-->
+		<section class="container-fluid clearfix" id="content">
+			<div class="prod clearfix">
+				<div class="list_bt">
+					<h3 class="bt text-center">被枕</h3>
+					<p class="des text-center">守护你的睡眠时光</p>
+				</div>
+				<div class="list_prod">
+					
+				</div>
+			</div>
+		</section>
+		<!--content结束-->
+		<!--回到顶部开始-->
+			<div class="top">span<</div>
+		
+		<!--回到顶部结束-->
+			
+		<!--底部开始-->
+		<div id="more">
+			<p class="more"><span class="Fline"></span>更多内容，敬请期待<span class="Fline"></span></p>
+		</div>
+		<div id="foot">
+			<div class="app"><a href="###">下载APP</a></div>
+			<div class="app pc"><a href="###">电脑版</a></div>
+			<p>网易公司版权所有@copy;1997-2016</br>食品经营许可证  : JY13301080111719</p>
+		</div>
+		<!--底部开始-->
+	</div>
+	</body>
+	<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/zepto.min.js"></script>
+	<script src="../js/swiper-3.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/list.js" ></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

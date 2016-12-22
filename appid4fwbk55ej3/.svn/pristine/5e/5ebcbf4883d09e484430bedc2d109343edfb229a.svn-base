@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>网易严选详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../boot/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper-3.4.0.min.css"/>
+		
+		
+		<script type="text/javascript" src="../js/detail/jquery-3.1.0.min.js">
+		</script>	
+		
+		
+	</head>
+	<body>
+		<!--头部开始-->
+		<header class="container-fluid">
+			
+		</header>
+		<!--头部结束-->
+		
+		
+		<!--内容部分-->
+		<section id="wrapper">
+			<div id="scroller" class="goodbox">
+				<!--banner部分-->
+				<div class="swiper-container">
+	       			<div class="swiper-wrapper">
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+		       		</div>
+		        	<div class="swiper-pagination"></div>
+		    	</div>
+		    	<!--banner结束-->
+		    	
+		    	<!--商品标题开始-->
+		    	<div class="goodname">
+		    		<p class="text-center goodtitle"></p>
+		    		<p class="text-center"></p>
+		    		<p class="text-center"></p>
+		    	</div>
+		    	<!--商品标题结束-->
+		    	
+		    	<!--商品退款等开始-->
+		    	<div class="container-fluid ">
+		    		<div class="manner">
+		    			<p><b></b><span>30天无忧退货</span></p>
+		    			<p><b></b><span>48小时快速退款</span></p>
+		    			<p><b></b><span>满88元免邮费</span></p>
+		    		</div>
+		    		
+		    	</div>	
+		    	<!--商品退款等结束-->
+		    	
+		    	<!--选择规格开始-->
+		    	<div class="container-fluid">
+		    		<a href="javascript:;" class="number">
+		    			<span>请选择规格数量</span>
+		    			<b>></b>
+		    		</a>
+		    	</div>
+		    	<!--选择规格结束-->
+		    	
+		    	<!--促销开始-->
+		    	<div class="container-fluid">
+		    		<a href="https://m.you.163.com/act/pub/eXL8iIgomR.html" class="active">
+		    			<span>1个促销:</span>
+		    			<b class="sdan1">圣诞节</b>
+		    			<b class="sdan2">领￥800礼物卡,满50送圣诞...</b>
+		    			<b class="sdan3">></b>
+		    		</a>
+		    	</div>
+		    	<!--促销结束-->
+		    	<div class="kong"></div>
+		    	
+		    	<!--评价开始-->
+		    	<div class="container-fluid">
+		    		<div class="comment">
+		    			<a href="http://m.you.163.com/item/comment?id=1109016"><b>评价(54)</b><span>查看全部</span></a>
+		    		</div>
+		    		<div class="container-fluid contcent">
+		    			<div class="contbt">
+		    				<p>
+		    					<span>
+		    						<img src="../images/detail/pic1.jpg">
+		    					</span>
+		    					<b>j****5</b>
+		    				</p>
+		    				<p>
+		    					<span>2016-12-20</span>
+		    					<b>15:50:03</b>
+		    				</p>
+		    			</div>
+		    			<p class="befau">不算很大，但是很精致，很美！</p>
+		    			<p class="beaull">7.0大汤碗</p>
+		    			
+		    		</div>
+		    	</div>
+		    	<!--评价结束-->
+		    	<div class="kong"></div>
+		    	
+		    	<!--商品参数开始-->
+		    	<div class="container-fluid goodarg">
+		    		<div class="argnamebt">
+		    		</div>
+		    		<div class="argnamelist">
+		    			
+		    		</div>
+		    	</div>
+		    	<!--商品参数结束-->
+		    	<!--常见问题开始-->
+		    	<div class="wenti">
+		    		<img src="../images/detail/wt1.png">
+		    		<img src="../images/detail/wt2.png">
+		    	</div>
+		    	<!--常见问题结束-->
+			</div>
+			
+			<!--选择商品加入购物车-->
+			<div class="toshop">
+				<div class="toshopping " >
+					<div class="container-fluid fontshop">
+						<div class="shoppic">
+							<img src="../images/detail/pic1.png">
+						</div>
+						<div class="shopsec">
+							<p><span>价格：</span><span class="goodpr">￥25.00</span></p>
+							<p class="guige"><span>已选择：</span><span class="guisum">请选择规格数量</span></p>
+						</div>
+					</div>
+					<!--尺寸-->
+					<div class="container-fluid shosize">
+						<h3>尺寸</h3>
+						<p id="goodsize">
+							<a href="javascript:;" class="">3.8饭碗</a>
+							<a href="javascript:;">3.8饭碗</a>
+							<a href="javascript:;">3.8饭碗</a>
+							<a href="javascript:;">3.8饭碗</a>
+						</p>
+					</div>
+					<!--数量-->
+					<div class="container-fluid contshop">
+						<h3>数量</h3>
+						<p>
+							<a href="javascript:;" class="jian">-</a>
+							<input class="text" type="text" value="1"/>
+							<a href="javascript:;" class="add">+</a>
+						</p>
+						<p class="goodmark">本商品1件起售</p>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--回到顶部-->
+			<div class="top "><span class="glyphicon glyphicon-chevron-up"></span></div>
+			
+			
+		</section>
+		<!--内容部分结束-->
+		
+		<!--底部开始-->
+		<footer class="container-fluid ">
+			<div class="row foot">
+				<a href="javascript:;" class="col-xs-4 text-center changebg glyphicon glyphicon-headphones "></a>
+				<a href="###" class="col-xs-4 text-center">立即购买</a>
+				<a href="javascript:;" class="col-xs-4 text-center goshopping">加入购物车</a>
+			</div>
+		</footer>
+		<!--底部结束-->
+	</body>
+
+	
+	
+	<script type="text/javascript" src="../js/detail/zepto_1.1.3.js">
+	</script>	
+	<script type="text/javascript" src="../js/detail/swiper-3.4.0.jquery.min.js">
+	</script>	
+	<script type="text/javascript" src="../js/detail/touch.min.js">
+	</script>	
+	
+	<script type="text/javascript" src="../js/detail/detail.js">
+	</script>	
+	<script type="text/javascript" src="../js/detail/iscroll.js">	
+	</script>
+</html>

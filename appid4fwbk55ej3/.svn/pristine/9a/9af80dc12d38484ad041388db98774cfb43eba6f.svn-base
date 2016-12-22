@@ -1,0 +1,191 @@
+body,html{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y:scroll ;
+}
+/*lsnav开始*/
+#lsnav{
+	height: 10vh;
+	position: fixed;
+	left:0;
+	top:0;
+	background:#fff;
+	z-index: 22;
+}
+#lsnav:after{
+	height:10vh;
+	width:100%;
+	content: "";
+	display: block;
+}
+.swiper-container{
+	height: 10vh;
+}
+.swiper-wrapper{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.swiper-wrapper .swiper-slide{
+	width:1.8vw;
+	height: 10vh;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.lsnav li{
+	color:#909090;
+	font-size: 4.6vw;
+}
+.active{
+	border-bottom:2px solid #AB2B2B;
+}
+/*banner开始*/
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+#list_banner{
+	position:relative;
+	left:0;
+	top:0;
+	width:100vw;
+	height:35vw;
+	background-size: cover;
+}
+#list_banner img{
+	display: block;
+	width: 100vw;
+	height:35vw;		
+}
+#wrap{
+	margin-top:10vh;
+}
+.wrap{
+	width:100%;
+	padding-top: 15%;
+	height: 35vw;	
+	position:absolute;
+	top:0;
+	left:0;
+	background:#333;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+.cnt{
+	width:100%;
+	padding-top: 15%;
+	height: 35vw;	
+	position:absolute;
+	top:0;
+	left:0;
+}
+.name{
+	font-size: 4.5vw;
+    color: #fff;
+    line-height: 1.5;
+}
+.line{
+	width:20vw;
+	height:2px;
+	background:#fff;
+	margin:0 auto;
+}
+/*banner结束*/
+
+/*conten开始*/
+#content{
+	width:100%;
+	/*height:400px;*/
+	background: #F4F4F4;
+}
+.list_bt{
+	display: flex;
+	flex-direction: column;
+	background:#F4F4F4;
+}
+.des{
+	color:#AFAAAA;
+}
+.list_prod{
+	width: 100%;
+/*	display: flex;
+	justify-content: space-between;*/
+}
+
+.list_prod .list1{
+	width:50%!important;
+	float: left;
+	min-height:35vh;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #CCCCCC;
+	box-sizing: border-box;
+	background:#fff;
+	margin-bottom: 0;
+	
+}
+.list_prod img{
+	width:40vw;
+	height:auto;
+}
+.list_prod .list_name{
+	line-height: 5vh;
+	color:#AFAAAA;
+	text-align: center;
+}
+.price{
+	color:#B9383D;
+}
+.color{
+	color:#AFAAAA;
+}
+
+/*conten结束*/
+.top{
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+	background:pink;
+	position:fixed;
+	right:10px;
+	bottom:40px;
+	z-index: 222;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

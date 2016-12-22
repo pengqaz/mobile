@@ -1,0 +1,47 @@
+.w_yonghu{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height:15vh;
+	color:#fff;
+	background-image: url("http://nos.netease.com/yanxuan/6ae93353e95b3450a2710bb43f925a63.jpg");
+	background-size: 100% auto;
+}
+.w_yonghu p:last-child{
+	color:rgb(127, 127, 127);
+}
+.w_yonghu img{
+	height:10vh;
+	border-radius: 50%;
+}
+.w_xuanze{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap ;
+	background: #fff;
+}
+.w_list{
+	height:20vh;
+	width:33vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	
+}
+.w_list .w_ziti{
+	font-size: 2rem;
+}
+section{
+	background-color: #CFCFCF;
+}
+.w_tuichu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	margin-top: 1rem;
+	height:3.8rem;
+	cursor: pointer;
+}

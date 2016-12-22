@@ -1,0 +1,167 @@
+{
+	"classify": [
+		{
+			"classid": "0",
+			"classname": "居家",
+			"classbname": "爱，囿于厨房",
+			"classbanner": "../images/list_img/list_banner.jpg",
+			"goods1": {
+				"goodsbt": {
+					"goodid": "0",
+					"goodbt": "被枕",
+					"gooddes": "守护你的睡眠时光"
+				},
+				"product": [{
+					"thing0": {
+						"imgid": "0",
+						"img": "../images/list_img/beizi.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": ""
+						}
+					},{
+					"thing0": {
+						"imgid": "1",
+						"img": "../images/list_img/bed.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "2",
+						"img": "../images/list_img/beizi.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "3",
+						"img": "../images/list_img/beizi.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "4",
+						"img": "../images/list_img/bed.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					}
+				]
+			}
+		}, {
+			"classid": "1",
+			"classname": "餐厨",
+			"classbname": "配角，亦是主角",
+			"classbanner": "../images/list_img/list_banner2.jpg",
+			"goods1": {
+				"goodsbt": {
+					"goodid": "5",
+					"goodbt": "锅具",
+					"gooddes": "一口好锅，炖煮一日三餐"
+				},
+				"product": [{
+					"thing0": {
+						"imgid": "6",
+						"img": "../images/list_img/guo1.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": ""
+						}
+					},{
+					"thing0": {
+						"imgid": "7",
+						"img": "../images/list_img/guo2.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "8",
+						"img": "../images/list_img/guo3.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "9",
+						"img": "../images/list_img/guo4.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "10",
+						"img": "../images/list_img/guo5.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					}
+				]
+			}
+		}, {
+			"classid": "2",
+			"classname": "配件",
+			"classbname": "贴身的，要亲肤",
+			"classbanner": "../images/list_img/list_banner3.jpg",
+			"goods1": {
+				"goodsbt": {
+					"goodid": "2",
+					"goodbt": "功能箱包",
+					"gooddes": "范思哲、Coach等品牌制造商出品"
+				},
+				"product": [{
+					"thing0": {
+						"imgid": "11",
+						"img": "../images/list_img/bao1.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": ""
+						}
+					},{
+					"thing0": {
+						"imgid": "12",
+						"img": "../images/list_img/bao2.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "13",
+						"img": "../images/list_img/bao3.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "14",
+						"img": "../images/list_img/bao4.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					},{
+					"thing0": {
+						"imgid": "15",
+						"img": "../images/list_img/bao5.png",
+						"thingbt": "秋冬保暖加厚澳洲羊毛被",
+						"thingprice": "￥459",
+						"colchoice": "三色可选"
+						}
+					}
+				]
+			}
+		}
+	]
+}
