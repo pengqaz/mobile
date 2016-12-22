@@ -5,67 +5,96 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="shortcut icon" href="../images/public/favicon.ico">
-    <!--  <link rel="stylesheet" type="text/css" href="../css/swiper-3.4.0.min.css" /> -->
+   <!--  <link rel="stylesheet" type="text/css" href="../css/swiper-3.4.0.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="../boot/css/bootstrap.min.css" />
     <title>购物车-网易严选</title>
     <link rel="stylesheet" type="text/css" href="../css/public.css">
     <link rel="stylesheet" type="text/css" href="../css/cart.css">
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/cart.js"></script>
 </head>
 
 <body>
-    <header class="container-fluid cart-head">
+    <header class="container-fluid">
         <div class="J_nav">
             <img src="../images/public/cai1.png" />
             <h3>网易严选</h3>
-            <p id="btn">编辑</p>
+            <p >编辑</p>
         </div>
     </header>
-    <div class="cart-con">
-        <ul class="explain">
-            <li class="explain-item">30天无忧退货</li>
-            <li class="explain-item">48小时快速退货</li>
-            <li class="explain-item">满88免邮费</li>
-        </ul>
-        <div class="container" style="display: none;">
-            <div class="none-img">
-                <img src="../images/cart/FnoCar.png">
-            </div>
-            <p class="none-text">去添加点什么吧</p>
+    <ul class="explain">
+        <li class="explain-item">30天无忧退货</li>
+        <li class="explain-item">48小时快速退货</li>
+        <li class="explain-item">满88免邮费</li>
+    </ul>
+    <div class="container" style="display: none;">
+        <div class="none-img">
+            <img src="../images/cart/FnoCar.png">
         </div>
-        <div class="goods-list">
-            <ul>
-                 <li class="clear">
-                    <input class="checkbox" type="checkbox" name="">
-                    <div class="item-right">
-                        <img src="../images/list_img/bed.png">
-                        <div class="item-text">
-                            <h4>简约陶瓷马克杯</h4>
-                            <p>蓝色</p>
-                            <p>¥100.00</p>
-                             <div class="cart-num" id="cart-num">X1</div>
-                             <div class="change-num cart-num clear" id="cart-num2" style="display: none;">
-                                <input  type="button" value="-" name="">
-                                <input  type="text" name="" value="1">
-                                <input type="button" value="+" name="">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <p class="none-text">去添加点什么吧</p>
     </div>
-    <footer class="cart-footer">
-        <input type="checkbox"  name="">
-        <p>已选（4）</p>
-        <div class="foot-right">
-            <b>¥2096.00</b>
-            <span > 下单 </span>
-            <span  style="display: none;"> 删除</span>
-        </div>
-    </footer>
+    <div class="goods-list">
+        <ul>
+            <li class="clear">
+                <input type="checkbox" name="">
+                <div class="item-right">
+                    <img src="../images/list_img/bed.png">
+                    <div class="item-text">
+                        <h4>简约陶瓷马克杯</h4>
+                        <p>蓝色</p>
+                        <p>¥100.00</p>
+                        <span>X1</span>
+                    </div>
+                </div>
+            </li>
+            <li class="clear">
+                <input type="checkbox" name="">
+                <div class="item-right">
+                    <img src="../images/list_img/bed.png">
+                    <div class="item-text">
+                        <h4>简约陶瓷马克杯</h4>
+                        <p>蓝色</p>
+                        <p>¥100.00</p>
+                        <span>X1</span>
+                    </div>
+                </div>
+            </li>
+            <li class="clear">
+                <input type="checkbox" name="">
+                <div class="item-right">
+                    <img src="../images/list_img/bed.png">
+                    <div class="item-text">
+                        <h4>简约陶瓷马克杯</h4>
+                        <p>蓝色</p>
+                        <p>¥100.00</p>
+                        <span>X1</span>
+                    </div>
+                </div>
+            </li>
+            <li class="clear">
+                <input type="checkbox" name="">
+                <div class="item-right">
+                    <img src="../images/list_img/bed.png">
+                    <div class="item-text">
+                        <h4>简约陶瓷马克杯</h4>
+                        <p>蓝色</p>
+                        <p>¥100.00</p>
+                        <span>X1</span>
+                    </div>
+                </div>
+            </li>
+            <li class="clear">
+                <input type="checkbox" name="">
+                <div class="item-right">
+                    <img src="../images/list_img/bed.png">
+                    <div class="item-text">
+                        <h4>简约陶瓷马克杯</h4>
+                        <p>蓝色</p>
+                        <p>¥100.00</p>
+                        <span>X1</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
+
 </html>
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/cart.js"></script>
