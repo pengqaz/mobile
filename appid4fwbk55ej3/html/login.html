@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="images/public/favicon.ico">
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+	</head>
+	<body>
+		<section class="w_login">
+			<div class="w-container">
+				<div class="w_youxiang">
+					<input type="text" name="" id="uname" placeholder="邮箱账号" class="w_input1" />
+				</div>
+				<div class="w_youxiang">
+					<input type="password" name="" id="upass" placeholder="密码" class="w_input1" />
+				</div>
+				<div class="W_denglu">
+					<a href="Javascipt:;" class="dengluuu"></a>
+				</div>
+				<div class="m-unlogin">
+					<a class="forgetpwd j-redirect" data-outlink="1" href="http://reg.163.com/resetpwd/index.do" target="_blank">
+						忘记密码
+					</a>
+					<a id="changepage" data-action="none" class="u-regbtn bgcolor tabfocus j-redirect" href="register.html">
+						注册账号
+					</a>
+				</div>
+				<div class="w_ologin">
+					
+				</div>
+				<div class="w_qqweibo">
+						<a href="Javascript:;" class="qq"></a>
+						<a href="Javasscript:;" class="weibo"></a>
+				</div>
+			</div>
+		</section>
+		<script src="../js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".dengluuu").click(function  () {
+			
+				var uname=$("#uname").val();
+				var upass=$("#upass").val();
+				
+				$.ajax({
+					url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+					data:{
+						status:"login",
+						userID:uname,
+						password:upass
+					},
+					success:function(data){
+						window.localStorage.flag=true;
+						window.localStorage.name=uname;
+						window.location.href="denglu.html";
+					}				
+				})			
+			});
+		</script>
+	</body>
+
+</html>
